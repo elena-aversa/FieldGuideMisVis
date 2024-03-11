@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 img.style.zIndex = '10';
 
                 if (svgElement) {
-                    svgElement.style.fill = 'white';
-                    svgElement.style.strokeWidth = '2px';
+                    svgElement.style.fill = 'blue';
+                    svgElement.style.strokeWidth = '5px';
                 }
             });
 
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 if (svgElement) {
                     svgElement.style.fill = 'none';
-                    svgElement.style.strokeWidth = '1px';
+                    svgElement.style.strokeWidth = '2px';
                 }
             });
         }
