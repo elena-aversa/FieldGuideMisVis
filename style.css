@@ -159,9 +159,6 @@ button {
       border: 1px solid black;
       font-size: 1rem;
       font-family: "abs";
-  }
-  
-  button {
       cursor: pointer;
   }
   
@@ -177,13 +174,20 @@ button {
     border: 1px solid black;
     font-size: 1rem;
     font-family: "nmr";
-}
-
-button2 {
     cursor: pointer;
 }
 
 button2:hover {
+    background-color: #d1fa00;
+}
+
+button3 {
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button3:hover {
     background-color: #d1fa00;
 }
 
@@ -283,8 +287,23 @@ ul.custom-bullets li::before {
     position: relative;
 }
 
+.outlined-table2 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-collapse: collapse; 
+    width: auto; 
+  }
 
-.outlined-table {
+  
+  .outlined-table2 th,
+  .outlined-table2 td {
+    border: 1px solid black; 
+    text-align: left;
+    padding: 0.7rem 2rem; 
+  }
+  
+
+  .outlined-table {
     margin-top: 3rem;
     margin-bottom: 3rem;
     border-collapse: collapse; 
@@ -298,7 +317,6 @@ ul.custom-bullets li::before {
     text-align: left;
     padding: 0.7rem 2rem; 
   }
-  
   
 .svgcontainer {
     width: 70%;
