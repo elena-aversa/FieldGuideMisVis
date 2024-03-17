@@ -70,3 +70,18 @@ function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
 }
 
+
+
+
+function toggleSection(sectionId) {
+    var content = document.getElementById(sectionId);
+    var button = content.previousElementSibling.querySelector('button2'); // Adjust based on your actual HTML structure if needed
+
+    if (content.style.display === "none" || !content.style.display) {
+        content.style.display = "block";
+        button.textContent = "Collapse the example ↑";
+    } else {
+        content.style.display = "none";
+        button.textContent = "Expand to see and example ↓";
+    }
+}
