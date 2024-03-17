@@ -4,7 +4,19 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Creates a three-column layout */
     gap: 20px; /* Adjust the space between columns */
-    margin: 20px; /* Optional: Adds some space around the grid */
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    .three-column-layout {
+        grid-template-columns: 1fr; /* Stacks the columns vertically on smaller screens */
+    }
+}
+
+.two-column-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates a three-column layout */
+    gap: 40px; /* Adjust the space between columns */
 }
 
 /* Responsive adjustment */
