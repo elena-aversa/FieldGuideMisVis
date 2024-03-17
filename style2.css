@@ -3,7 +3,7 @@
 .three-column-layout {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Creates a three-column layout */
-    gap: 20px; /* Adjust the space between columns */
+    gap: 40px; /* Adjust the space between columns */
 }
 
 /* Responsive adjustment */
@@ -16,7 +16,7 @@
 .two-column-layout {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Creates a three-column layout */
-    gap: 40px; /* Adjust the space between columns */
+    gap: 80px; /* Adjust the space between columns */
 }
 
 /* Responsive adjustment */
