@@ -21,6 +21,10 @@ document.getElementById('goTonarPos').addEventListener('click', function() {
     window.location.href = 'narPos.html';
 });
 
+document.getElementById('goToreaPos').addEventListener('click', function() {
+    window.location.href = 'reaPos.html';
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     // Query all the elements with the class 'toggle-sym'
     document.querySelectorAll('.toggle-sym').forEach(function(toggle) {
