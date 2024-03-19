@@ -284,6 +284,28 @@ ul.custom-bullets li::before {
     position: relative;
 }
 
+.outlined-table3 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-collapse: collapse; 
+    width: 100%; 
+    table-layout: fixed;
+  }
+
+  
+  .outlined-table3 th,
+  .outlined-table3 td {
+    border: 1px solid black; 
+    text-align: left;
+    padding: 0.7rem 2rem; 
+    equal width;
+  }
+
+  .outlined-table3 th {
+    font-family: nmr; 
+  }
+  
+
 .outlined-table2 {
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -388,4 +410,9 @@ navbut {
     background-color:  white;
     text-align: left;
     font-size: 2rem;
+}
+
+
+.lineb {
+    border: 1px solid blue;
 }
