@@ -16,7 +16,7 @@
 .two-column-layout {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Creates a three-column layout */
-    gap: 80px; /* Adjust the space between columns */
+    gap: 40px; /* Adjust the space between columns */
 }
 
 /* Responsive adjustment */
@@ -221,4 +221,20 @@
 
 .bloccotesto{
     max-width: 40rem;
+}
+
+
+
+
+.four-column-layout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates a three-column layout */
+    gap: 20px; /* Adjust the space between columns */
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    .four-column-layout {
+        grid-template-columns: 1fr; /* Stacks the columns vertically on smaller screens */
+    }
 }
