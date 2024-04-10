@@ -36,7 +36,36 @@
   @font-face {
     font-family: 'nmr';
     src: url('NectoMonoRegular.otf') format('opentype');
-}  
+}   
+
+.grid-overlay {
+  position: fixed; /* or absolute, depending on use case */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 40px 40px; /* Adjust grid cell size */
+  background-image: 
+      linear-gradient(to right, #acacac 1px, transparent 1px),
+      linear-gradient(to bottom, #acacac 1px, transparent 1px);
+  z-index: 10; /* Ensure it overlays content; adjust as necessary */
+}
+
+.centered-content {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Adjust as needed, 100vh will take the full height of the viewport */
+  text-align: center; /* Ensures text inside the flex item is centered if it wraps */
+}
+
+.logo {
+  text-decoration: none;
+  font-family: "abs";
+  /*color: #5c742d !important;*/
+  color: #d1fa00;
+  cursor: pointer;
+}
 
   .imagegrid-container {
     width: 100%; 
@@ -50,12 +79,12 @@
       position: -webkit-sticky;
       position: sticky;
       top: 0;
-      background-color: white;
+      background-color: #f3e7d8;  
+      border-bottom: solid black 1px;
       z-index: 1000;
-      border-bottom: 1px solid #000000;
       display: flex; /* Already set for aligning items in a row */
       justify-content: space-between; /* Already set for space between logo and links */
-      padding: 1rem 2rem; /* Already set for padding around navbar content */
+      padding: .3rem 2rem; /* Already set for padding around navbar content */
       font-size: .8rem; /* Fixed font size for navbar */
   }
   
@@ -70,11 +99,30 @@
   
   nav.container-fluid ul li a,
   nav.container-fluid ul li strong {
-      color: black; /* Text color set to black for visibility */
+      color: #c4b5a2; /* Text color set to black for visibility */
       text-decoration: none; /* Remove underline from links */
   }
   
+
+  nav.container-fluid2 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2.5rem;
+    height: 3rem;
+    background-color: rgba(255, 255, 255, 0.91);
+
+    z-index: 1000;
+    display: flex; /* Already set for aligning items in a row */
+}  
   
+.line-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center; /* Centers the line sections vertically */
+}
+
+
   .bordertop {
     border-top: 1px solid #000000;
   }
@@ -99,7 +147,7 @@
 
   body {
       color: black;
-      background-color: white;
+      background-color: fefae0;
       margin: 0;
       font-family: "abs";
       font-size: 1.3rem; /* General font size */
@@ -172,6 +220,7 @@ button {
     font-size: 1rem;
     font-family: "abs";
     cursor: pointer;
+    border-bottom: solid black 1px;
 }
 
 button2:hover {
@@ -189,21 +238,39 @@ button3:hover {
 }
 
 nav a:hover {
-    color: #c2c6af !important;
+    color: black !important;
 }
+
+
 footer.container-fluid {
-    position: -webkit-sticky; /* For Safari */
-    position: sticky;
-    bottom: 0;
-    background-color: rgb(255, 255, 255);
-    z-index: 1000;
-    border-top: 1px solid #000;
-    display: flex; /* Already set for aligning items in a row */
-    justify-content: space-between; /* Already set for space between logo and links */
-    padding: 0.1rem 2rem; /* Already set for padding around navbar content */
-    font-size: 1rem; /* Fixed font size for navbar */
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  border-top: solid black 1px;
+  background-color: #f3e7d8;
+  z-index: 1000;
+  display: flex; /* Already set for aligning items in a row */
+  justify-content: space-between; /* Already set for space between logo and links */
+  padding: .3rem 2rem; /* Already set for padding around navbar content */
+  font-size: .8rem; /* Fixed font size for navbar */
+  color: black;
 }
   
+footer.container-fluid ul {
+  display: flex; /* Already set for displaying list items in a row */
+  gap: 2rem; /* Already set for space between links */
+  padding: 0; /* Already reset */
+  list-style-type: none; /* Already removed default list styling */
+  align-items: center; /* Center items vertically */
+  margin: 0; /* Ensure no default margin */
+}
+
+footer.container-fluid ul li a,
+footer.container-fluid ul li strong {
+  color: black; /* Text color set to black for visibility */
+  text-decoration: none; /* Remove underline from links */
+}
+
 .line-after::after {
     content: '';
     display: block;
@@ -298,7 +365,7 @@ ul.custom-bullets li::before {
     border: 1px solid black; 
     text-align: left;
     padding: 0.7rem 2rem; 
-    equal width;
+
   }
 
   .outlined-table3 th {

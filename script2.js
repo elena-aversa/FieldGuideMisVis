@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 img.style.zIndex = '10';
 
                 if (svgElement) {
-                    svgElement.style.fill = 'blue';
+                    svgElement.style.fill = '#ed5835';
                     svgElement.style.strokeWidth = '5px';
                 }
             });
