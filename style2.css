@@ -57,14 +57,14 @@
 
 .tacappl {
     /*background-color: #D4D275;*/
-    border: 3px solid blue;
+    border: 3px solid black;
 
 
 }
 
 .tacmay {
     /*background-color: #EAE7BB;*/
-    border: 1px solid blue;
+    border: 1px solid black;
 }
 
 .smallfont{
@@ -87,8 +87,8 @@
 
 
 /* Example specific colors */
-.yellow { background-color: white; border: 3px solid blue;}
-.red { background-color: white; border: 1px solid blue; }
+.yellow { background-color: white; border: 3px solid black;}
+.red { background-color: white; border: 1px solid black; }
 .outline { background-color: white; border: .5px solid #939393;}
 
 
