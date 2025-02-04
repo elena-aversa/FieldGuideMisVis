@@ -1,0 +1,475 @@
+.source-serif {
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+  }
+  
+  @font-face {
+    font-family: 'PSL';
+    src: url('PlantasiaStingrayLight.otf') format('opentype');
+}
+
+.grid-overlay {
+  position: fixed; /* or absolute, depending on use case */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 40px 40px; /* Adjust grid cell size */
+  background-image: 
+      linear-gradient(to right, #acacac 1px, transparent 1px),
+      linear-gradient(to bottom, #acacac 1px, transparent 1px);
+  z-index: 10; /* Ensure it overlays content; adjust as necessary */
+}
+
+.centered-content {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Adjust as needed, 100vh will take the full height of the viewport */
+  text-align: center; /* Ensures text inside the flex item is centered if it wraps */
+}
+
+.logo {
+  text-decoration: none;
+  font-family: "abs";
+  /*color: #5c742d !important;*/
+  color: #d1fa00;
+  cursor: pointer;
+}
+
+  .imagegrid-container {
+    width: 100%; 
+    height: auto;
+    padding-top: 4rem;
+    margin: 0 auto; /* Center it if needed */
+    /* Add any other styles you need */
+  }
+
+  nav.container-fluid {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      background-color: #f3e7d8;  
+      border-bottom: solid black 1px;
+      z-index: 1000;
+      display: flex; /* Already set for aligning items in a row */
+      justify-content: space-between; /* Already set for space between logo and links */
+      padding: .3rem 2rem; /* Already set for padding around navbar content */
+      font-size: .8rem; /* Fixed font size for navbar */
+  }
+  
+  nav.container-fluid ul {
+      display: flex; /* Already set for displaying list items in a row */
+      gap: 2rem; /* Already set for space between links */
+      padding: 0; /* Already reset */
+      list-style-type: none; /* Already removed default list styling */
+      align-items: center; /* Center items vertically */
+      margin: 0; /* Ensure no default margin */
+  }
+  
+  nav.container-fluid ul li a,
+  nav.container-fluid ul li strong {
+      color: #c4b5a2; /* Text color set to black for visibility */
+      text-decoration: none; /* Remove underline from links */
+  }
+  
+
+  nav.container-fluid2 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2.5rem;
+    height: 3rem;
+    background-color: rgba(255, 255, 255, 0.91);
+
+    z-index: 1000;
+    display: flex; /* Already set for aligning items in a row */
+}  
+  
+.line-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center; /* Centers the line sections vertically */
+}
+
+
+  .bordertop {
+    border-top: 1px solid #000000;
+  }
+
+  .borderbot {
+    border-bottom: 1px solid #000000;
+  }
+
+  
+  .color {
+    color:#838383
+  }
+
+  .colorW {
+    color:#ffffff
+  }
+
+  .margins{
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  body {
+      color: black;
+      background-color: fefae0;
+      margin: 0;
+      font-family: "abs";
+      font-size: 1.3rem; /* General font size */
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; 
+  }
+  
+  h1 {
+      font-family: 'abs';
+      font-size: 5rem;
+      font-weight: normal !important;
+      line-height: 1.2;
+  }
+
+  h2 {
+    font-family: 'abs';
+    font-size: 2.8rem;
+    font-weight: normal !important;
+}
+  
+  h3 {
+    font-family: 'nmr';
+    font-size: 1.2rem;
+    font-weight: normal !important;
+}
+
+.testogrande{
+    font-family: 'abs';
+    font-size: 1.9rem;
+    font-weight: normal !important;
+}
+
+img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Default display to block */
+    margin-bottom: 20px; /* Space below the image */
+}
+  .container {
+      margin: auto;
+      padding: 2rem;
+      box-sizing: border-box;
+      width: 100%; 
+  }
+  
+  
+  .grid {
+      display: grid;
+      gap: 2rem;
+  }
+  
+button {
+      text-decoration: none;
+      background-color: #fcffeb;
+      padding: 0.5rem 1rem;
+      border: 1px solid black;
+      font-size: 1rem;
+      font-family: "abs";
+      cursor: pointer;
+  }
+  
+  button:hover {
+      background-color: #d1fa00;
+  }
+
+
+  button2 {
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: "abs";
+    cursor: pointer;
+    border-bottom: solid black 1px;
+}
+
+button2:hover {
+    background-color: #d1fa00;
+}
+
+button3 {
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button3:hover {
+    background-color: #d1fa00;
+}
+
+nav a:hover {
+    color: black !important;
+}
+
+buttonBIG {
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-family: 'PlantasiaStingrayLight', sans-serif;
+    cursor: pointer;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+buttonBIG a {
+    text-decoration: none;
+    color: inherit;
+}
+
+buttonBIG:hover {
+    text-decoration: underline;
+}
+
+
+footer.container-fluid {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  border-top: solid black 1px;
+  background-color: #f3e7d8;
+  z-index: 1000;
+  display: flex; /* Already set for aligning items in a row */
+  justify-content: space-between; /* Already set for space between logo and links */
+  padding: .3rem 2rem; /* Already set for padding around navbar content */
+  font-size: .8rem; /* Fixed font size for navbar */
+  color: black;
+}
+  
+footer.container-fluid ul {
+  display: flex; /* Already set for displaying list items in a row */
+  gap: 2rem; /* Already set for space between links */
+  padding: 0; /* Already reset */
+  list-style-type: none; /* Already removed default list styling */
+  align-items: center; /* Center items vertically */
+  margin: 0; /* Ensure no default margin */
+}
+
+footer.container-fluid ul li a,
+footer.container-fluid ul li strong {
+  color: black; /* Text color set to black for visibility */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.line-after::after {
+    content: '';
+    display: block;
+    width: 100%; /* Or set to a specific width like 50px */
+    height: 1px; /* Thickness of the line */
+    background-color: #000; /* Color of the line */
+    margin-top: 4rem; /* Space between the text and the line */
+    margin-bottom: 2rem;
+}
+
+.expandable-content {
+    display: none;
+}
+
+ul.custom-bullets {
+    list-style-type: none; /* Remove default bullets */
+    margin-left: 2rem;
+    margin-right: 4rem;
+}
+
+ul.custom-bullets li::before {
+    content: '⟡'; /* Custom bullet */
+    color: #000000; /* Bullet color */
+    display: inline-block; 
+    width: 1em; /* Ensure alignment */
+    margin-left: -1em; /* Position before the list item */
+    margin-right: 0.5rem
+}
+
+  /* Responsive adjustments */
+  @media (min-width: 576px) {
+      .container {
+          padding: 2rem;
+      }
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* 4 columns */
+    gap: 0; /* No gap between cells */
+
+}
+
+.image-cell {
+    position: relative;
+    /*outline: 1px solid #000; */
+    overflow: hidden;
+    display: flex; /* Ensure the content covers the entire cell */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.image-cell img {
+    width: 100%; /* Full width of the cell */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the area of the cell */
+}
+
+.image-label {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    width: 100%; /* Full width */
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    color: black; /* Label text color */
+    padding: 0.1rem 1rem; /* Padding around text */
+    text-align: left; 
+    outline: 1px solid #000;
+    font-size: 1rem; /* Fixed font size for navbar */
+}
+
+.big-container {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.outlined-table3 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-collapse: collapse; 
+    width: 100%; 
+    table-layout: fixed;
+  }
+
+  
+  .outlined-table3 th,
+  .outlined-table3 td {
+    border: 1px solid black; 
+    text-align: left;
+    padding: 0.7rem 2rem; 
+
+  }
+
+  .outlined-table3 th {
+    font-family: nmr; 
+  }
+  
+
+.outlined-table2 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-collapse: collapse; 
+    width: auto; 
+  }
+
+  
+  .outlined-table2 th,
+  .outlined-table2 td {
+    border: 1px solid black; 
+    text-align: left;
+    padding: 0.7rem 2rem; 
+  }
+  
+
+  .outlined-table {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-collapse: collapse; 
+    width: auto; 
+  }
+
+  
+  .outlined-table th,
+  .outlined-table td {
+    border: 1px solid #000; 
+    text-align: left;
+    padding: 0.7rem 2rem; 
+  }
+  
+.svgcontainer {
+    width: 70%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+  @media (min-width: 768px) {
+      .container {
+          max-width: 720px;
+      }
+  }
+  
+  @media (min-width: 992px) {
+      .container {
+          max-width: 960px;
+      }
+  }
+  
+  @media (min-width: 1200px) {
+      .container {
+          max-width: 1140px;
+      }
+  }
+  
+  @media (min-width: 1400px) {
+      .container {
+          max-width: 1320px;
+      }
+  }
+
+  a{
+    color:#838383
+  }
+
+
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* adjust the ratio according to your preference */
+    gap: 20px; /* space between image and text */
+}
+
+.headtablimg {
+    position: -webkit-sticky;
+      position: sticky;
+      z-index: 1000;
+      top: 0;
+      width: 100%;
+    height: auto;
+    margin: 0 auto;
+    top: 30px;
+}
+
+
+navbut {
+    text-decoration: none; 
+    color: #000;
+}
+
+.suggestion-banner {
+    display: none; /* Hide by default */
+    position: fixed;
+    overflow-y: scroll;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 10px;
+    z-index: 1000;
+    font-size: 4rem;
+    background-color:  white;
+    text-align: left;
+    font-size: 2rem;
+}
+
+
+.lineb {
+    border: 1px solid blue;
+}
